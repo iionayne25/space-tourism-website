@@ -5,8 +5,9 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <div className="flex justify-between items-center w-full px-5">
-      <Image src="/shared/logo.svg" width={40} height={40} alt="logo image" />
+    <div className="flex justify-between items-center w-full px-5 pt-4 fixed bg-transparent z-10 ">
+      <Link href="/"><Image src="/shared/logo.svg" width={40} height={40} alt="logo image" /></Link>
+      
       <div className="md:hidden">
         <Sidebar />
       </div>

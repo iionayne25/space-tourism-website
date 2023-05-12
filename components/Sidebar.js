@@ -12,7 +12,7 @@ const Sidebar = () => {
     <>
       {isOpen ? (
         <div className={`sidebar ${isOpen ? "open" : ""}`}>
-          <button className="self-end" onClick={handleToggle}>
+          <button className="self-end mx-4" onClick={handleToggle}>
             <Image
               src="/shared/icon-close.svg"
               width={19.09}
