@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+body {
+margin: 0 auto;}
+
+@layer components{
+  .title-condensed{
+    @apply font-barlowCondensed  text-white font-extralight text-center text-[11px] tracking-[2.7px]
+  }
+  .title-bellefair{
+    @apply font-bellefair text-white text-[80px]
+  }
+  .description{
+    @apply font-barlow text-white text-[15px] text-center
+  }
+  .sidebar{
+    @apply  h-full w-[254px] bg-black/[0.04] backdrop-blur-xl flex flex-col gap-16 py-4 
+    fixed top-0 -right-[254px] 
+    
+  }
+  .sidebar.open{
+   @apply right-0
+  }
+  .sidebarContainer{
+    @apply flex gap-2  items-center h-8
+  }
+  .sidebarItem{
+    @apply text-white  font-barlowCondensed text-[14px] tracking-[2.7px] font-thin basis-1/2
+  }
+  .numberOfItem{
+    @apply text-white font-barlowCondensed font-bold text-[14px] tracking-[2.7px] basis-0 pl-6
+  }
+  .active{
+ @apply flex basis-1/2
+  }
+}
