@@ -1,15 +1,28 @@
 import React from 'react'
 import Head from 'next/head'
 import Header from '@/components/Header'
-const index = () => {
+import TechnologyCard from '@/components/TechnologyCard'
+import { getLocalData } from '@/lib/localData'
+const index = ({localData}) => {
+  const techData = localData.technology.map(tech =>{
+    const { name,images,description} =tech;
+    const {portrait,landscape} = images
+    return {name,imageType:{portrait,landscape},description}
+  })
+  const firstTechData = techData[0]
   return (
     <>
     <Head>
         <title>Technology</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <main className="flex min-h-[667px] flex-col  items-center bg-bg-home-mobile pt-5  ">
-        <div className="w-full pb-10"><Header /></div>
+      <Header />
+      <main className="overflow-x-hidden overflow-y-scroll scroll-smooth">
+      <TechnologyCard
+        name={firstTechData.name}
+        src={firstTechData.imageType.landscape}
+        description={firstTechData.description}
+        />
       </main>
  
     </>
@@ -17,3 +30,9 @@ const index = () => {
 }
 
 export default index
+export async function getStaticProps(){
+  const localData = await getLocalData();
+  return{
+   props:{localData}
+  }
+ }

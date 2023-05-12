@@ -9,7 +9,7 @@ const index = ({localData}) => {
     const{png,webp} = images;
     return {name,imageUrl:{png,webp},role,bio}
   })
-  const firstCrewData = crewData[0]
+  const secondCrewData = crewData[1]
   return (
     <>
     <Head>
@@ -19,10 +19,10 @@ const index = ({localData}) => {
       <Header />
       <main className="overflow-x-hidden overflow-y-scroll scroll-smooth">
       <CrewCard
-        name ={firstCrewData.name}
-        src={firstCrewData.imageUrl.png}
-        role={firstCrewData.role}
-        bio={firstCrewData.bio}/>
+        name ={secondCrewData.name}
+        src={secondCrewData.imageUrl.png}
+        role={secondCrewData.role}
+        bio={secondCrewData.bio}/>
       </main>
  
     </>
