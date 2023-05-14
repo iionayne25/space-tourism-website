@@ -2,41 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
 
 body {
-margin: 0 auto;}
+  margin: 0 auto;
+}
 
-@layer components{
-  .title-condensed{
-    @apply font-barlowCondensed  text-white font-extralight text-center text-[11px] tracking-[2.7px]
+@layer base {
+  h1 {
+    @apply text-[150px] font-bellefair;
   }
-  .title-bellefair{
-    @apply font-bellefair text-white text-[80px]
+  h2 {
+    @apply text-[100px] font-bellefair;
   }
-  .description{
-    @apply font-barlow text-white text-[15px] text-center
+  h3 {
+    @apply text-[56px] font-bellefair;
   }
-  .sidebar{
-    @apply  h-full w-[254px] bg-black/[0.04] backdrop-blur-xl flex flex-col gap-16 py-4 
-    fixed top-0 -right-[254px] 
-    
+  h4 {
+    @apply text-[32px] font-bellefair;
   }
-  .sidebar.open{
-   @apply right-0
+  h5 {
+    @apply text-[28px] font-barlowCondensed tracking-[4.75px];
   }
-  .sidebarContainer{
-    @apply flex gap-2  items-center h-8
+  subheading1 {
+    @apply text-[28px] font-bellefair;
   }
-  .sidebarItem{
-    @apply text-white  font-barlowCondensed text-[14px] tracking-[2.7px] font-thin basis-1/2
+  subheading2 {
+    @apply text-[14px] font-barlowCondensed tracking-[2.35px];
   }
-  .numberOfItem{
-    @apply text-white font-barlowCondensed font-bold text-[14px] tracking-[2.7px] basis-0 pl-6
+  navText {
+    @apply text-[16px] font-barlowCondensed tracking-[2.7px];
   }
-  .active{
- @apply flex basis-1/2
+}
+
+@layer components {
+  .description {
+    @apply font-barlow leading-[25px] text-white text-[15px] text-center md:text-[16px] md:leading-[28px];
+  }
+  .sidebar {
+    @apply h-full w-[254px] bg-black/[0.04] backdrop-blur-xl flex flex-col gap-16 py-4 
+    fixed top-0 -right-[254px];
+  }
+  .sidebar.open {
+    @apply right-0;
+  }
+  .sidebarContainer {
+    @apply flex gap-2  items-center h-8;
+  }
+  .sidebarItem {
+    @apply text-white  font-barlowCondensed text-[14px] tracking-[2.7px];
+  }
+  .numberOfItem {
+    @apply text-white font-barlowCondensed font-bold text-[14px] tracking-[2.7px] basis-0 pl-6;
+  }
+  .active {
+    @apply flex basis-1/2;
   }
 }

@@ -20,7 +20,7 @@ const Sidebar = () => {
               alt="close icon image"
             />
           </button>
-          <div className="flex flex-col gap-4   ">
+          <div className="flex flex-col gap-4 ">
             <Link href="/" >
               <div className= "sidebarContainer">
                 <p className="numberOfItem">00</p>

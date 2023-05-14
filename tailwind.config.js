@@ -14,9 +14,9 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'bg-home-mobile':"url('/home/background-home-mobile.jpg')",
-        'bg-home-tablet':"url('/home/background-home-tablet.jpg')",
-        'bg-home-desktop':"url('/home/background-home-desktop.jpg')",
+        'home-mobile':"url('/home/background-home-mobile.jpg')",
+        'home-tablet':"url('/home/background-home-tablet.jpg')",
+        'home-desktop':"url('/home/background-home-desktop.jpg')",
         'dest-mobile':"url('/destination/background-destination-mobile.jpg')",
         'dest-tablet':"url('/destination/background-destination-tablet.jpg')",
         'dest-desktop':"url('/destination/background-destination-desktop.jpg')",
@@ -30,6 +30,9 @@ module.exports = {
       colors:{
         'lightBlue':'#D0D6F9',
         'darkGray':'#383B4B',
+        'offBlack':'#0B0D17',
+        'white':'#FFFFFF',
+
       }
     },
    

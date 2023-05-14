@@ -15,7 +15,7 @@ const CrewCard = ({ name, src, role, bio }) => {
           MEET YOUR CREW
         </p>
       </div>
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center w-[237px] h-[223px]">
         {src === "/crew/image-douglas-hurley.png" ? (
           <Image src={src} width={177} height={222} alt={`${name} image`} />
         ) : src === "/crew/image-mark-shuttleworth.png" ? (
@@ -33,34 +33,42 @@ const CrewCard = ({ name, src, role, bio }) => {
           <Link href="/crew">
             <p
               className={`h-2 w-2 rounded-full ${
-                router.pathname == "/crew" ? "bg-white" : "bg-white/20"
+                router.pathname == "/crew"
+                  ? "bg-white"
+                  : "bg-white/20 hover:bg-white/60"
               }`}
             ></p>
           </Link>
           <Link href="/crew/b">
             <p
               className={`h-2 w-2 rounded-full ${
-                router.pathname == "/crew/b" ? "bg-white" : "bg-white/20"
+                router.pathname == "/crew/b"
+                  ? "bg-white"
+                  : "bg-white/20 hover:bg-white/60"
               }`}
             ></p>
           </Link>
           <Link href="/crew/c">
             <p
               className={`h-2 w-2 rounded-full ${
-                router.pathname == "/crew/c" ? "bg-white" : "bg-white/20"
+                router.pathname == "/crew/c"
+                  ? "bg-white"
+                  : "bg-white/20 hover:bg-white/60"
               }`}
             ></p>
           </Link>
           <Link href="/crew/d">
             <p
               className={`h-2 w-2 rounded-full ${
-                router.pathname == "/crew/d" ? "bg-white" : "bg-white/20"
+                router.pathname == "/crew/d"
+                  ? "bg-white"
+                  : "bg-white/20 hover:bg-white/50"
               }`}
             ></p>
           </Link>
         </div>
         <div className="pt-2">
-          <p className="font-bellefair text-[16px] uppercase text-white/50">
+          <p className="font-bellefair text-[16px] uppercase text-white/60">
             {role}
           </p>
           <p className="font-bellefair text-[24px] uppercase text-white">

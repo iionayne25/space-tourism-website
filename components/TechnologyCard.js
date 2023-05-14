@@ -31,7 +31,7 @@ const TechnologyCard = ({ name, src, description }) => {
               className={`h-10 w-10 rounded-full flex justify-center items-center font-bellefair  ${
                 router.pathname == "/technology"
                   ? "bg-white"
-                  : "bg-transparent border border-white/50 text-white "
+                  : "bg-transparent border border-white/50 text-white hover:border-white "
               }`}
             >
               1
@@ -42,7 +42,7 @@ const TechnologyCard = ({ name, src, description }) => {
               className={`h-10 w-10 text-base rounded-full flex justify-center items-center font-bellefai ${
                 router.pathname == "/technology/b"
                   ? "bg-white"
-                  : "bg-transparent border-2 border-white/50 text-white"
+                  : "bg-transparent border-2 border-white/50 text-white hover:border-white"
               }`}
             >
               2
@@ -53,7 +53,7 @@ const TechnologyCard = ({ name, src, description }) => {
               className={`h-10 w-10 rounded-full flex justify-center items-center font-bellefai ${
                 router.pathname == "/technology/c"
                   ? "bg-white"
-                  : "bg-transparent border-2 border-white/50 text-white"
+                  : "bg-transparent border-2 border-white/50 text-white hover:border-white"
               }`}
             >
               3
