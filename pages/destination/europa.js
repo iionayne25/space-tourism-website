@@ -31,7 +31,7 @@ const europa = ({ localData }) => {
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Header />
-      <main className="min-h-screen bg-dest-mobile pt-5  ">
+      <main className="min-h-screen bg-dest-mobile   ">
         <PlanetCard
           name={thirdDestinationData.name}
           src={thirdDestinationData.imageUrl.png}

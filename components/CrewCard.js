@@ -6,16 +6,18 @@ import { useRouter } from "next/router";
 const CrewCard = ({ name, src, role, bio }) => {
   const router = useRouter();
   return (
-    <div className="bg-crew-mobile flex flex-col gap-5 h-[710px] backdrop-brightness-0 overflow-x-hidden overflow-y-scroll items-center pt-16">
-      <div className="flex gap-3 justify-center items-center">
-        <p className="title-condensed font-bold text-white/30 text-[13px] ">
-          02
-        </p>
-        <p className="title-condensed font-normal text-[13px] ">
-          MEET YOUR CREW
-        </p>
+    <div
+      className="bg-crew-mobile flex flex-col gap-5 h-[710px] backdrop-brightness-0 overflow-x-hidden overflow-y-scroll items-center pt-16
+    md:bg-crew-tablet md:h-[1024px] md:px-7 "
+    >
+      <div
+        className="flex gap-3 justify-center items-center font-barlowCondensed text-white text-[13px]
+      md:text-[20px] md:pt-12 md:justify-start md:w-full "
+      >
+        <p className="font-bold text-white/30  ">02</p>
+        <p className="font-normal  ">MEET YOUR CREW</p>
       </div>
-      <div className="flex flex-col justify-center items-center w-[237px] h-[223px]">
+      <div className="md:hidden flex flex-col justify-center items-center w-[237px] h-[223px]">
         {src === "/crew/image-douglas-hurley.png" ? (
           <Image src={src} width={177} height={222} alt={`${name} image`} />
         ) : src === "/crew/image-mark-shuttleworth.png" ? (
@@ -28,8 +30,8 @@ const CrewCard = ({ name, src, role, bio }) => {
 
         <hr className="w-64 border-[1px] border-darkGray" />
       </div>
-      <div className="flex flex-col gap-4 justify-center items-center text-center ">
-        <div className="flex gap-4 ">
+      <div className="flex flex-col gap-4 justify-center items-center text-center md:justify-between  ">
+        <div className="flex gap-4 md:order-last">
           <Link href="/crew">
             <p
               className={`h-2 w-2 rounded-full ${
@@ -39,7 +41,7 @@ const CrewCard = ({ name, src, role, bio }) => {
               }`}
             ></p>
           </Link>
-          <Link href="/crew/b">
+          <Link href="/crew/b" as="/crew">
             <p
               className={`h-2 w-2 rounded-full ${
                 router.pathname == "/crew/b"
@@ -48,7 +50,7 @@ const CrewCard = ({ name, src, role, bio }) => {
               }`}
             ></p>
           </Link>
-          <Link href="/crew/c">
+          <Link href="/crew/c" as="/crew">
             <p
               className={`h-2 w-2 rounded-full ${
                 router.pathname == "/crew/c"
@@ -75,10 +77,20 @@ const CrewCard = ({ name, src, role, bio }) => {
             {name}
           </p>
         </div>
-
-        <p className="font-barlow text-[15px]  text-lightBlue px-5 leading-[25px]">
+        <p className="font-barlow text-[15px]  text-lightBlue px-5 leading-[25px] md:text-[16px] md:leading-[28px] md:px-24">
           {bio}
         </p>
+      </div>
+      <div className="hidden md:flex md:flex-col md:justify-center md:items-center ">
+        {src === "/crew/image-douglas-hurley.png" ? (
+          <Image src={src} width={457} height={572} alt={`${name} image`} />
+        ) : src === "/crew/image-mark-shuttleworth.png" ? (
+          <Image src={src} width={367} height={535} alt={`${name} image`} />
+        ) : src === "/crew/image-victor-glover.png" ? (
+          <Image src={src} width={433} height={532} alt={`${name} image`} />
+        ) : (
+          <Image src={src} width={540} height={532} alt={`${name} image`} />
+        )}
       </div>
     </div>
   );

@@ -7,11 +7,9 @@ const TechnologyCard = ({ name, src, description }) => {
   const router = useRouter();
   return (
     <div className="bg-tech-mobile flex flex-col gap-6 h-[710px] overflow-x-hidden overflow-y-scroll items-center pt-16">
-      <div className="flex gap-3 justify-center items-center">
-        <p className="title-condensed font-bold text-white/30 text-[13px] ">
-          03
-        </p>
-        <p className="title-condensed font-normal text-[13px] uppercase ">
+      <div className="flex gap-3 justify-center items-center font-barlowCondensed text-white md:justify-start md:items-start">
+        <p className="font-bold text-white/30 text-[14px] ">03</p>
+        <p className="title-condensed font-normal text-[14px] uppercase ">
           space launce 101
         </p>
       </div>

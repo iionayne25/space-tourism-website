@@ -19,7 +19,7 @@ const titan = ({ localData }) => {
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Header />
-      <main className="min-h-screen bg-dest-mobile pt-5  ">
+      <main className="min-h-screen bg-dest-mobile">
         <PlanetCard
           name={fourthDestinationData.name}
           src={fourthDestinationData.imageUrl.png}

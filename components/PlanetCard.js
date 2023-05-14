@@ -1,28 +1,20 @@
 import React from "react";
 import Image from "next/image";
 import NavPlanet from "./NavPlanet";
-import Link from "next/link";
-import CrewCard from "./CrewCard";
-import {
-  Link as ScrollLink,
-  Element,
-  Events,
-  animateScroll as scroll,
-} from "react-scroll";
+
 const PlanetCard = ({ name, src, description, distance, travel }) => {
   return (
     <>
       <div
-        className="bg-dest-mobile flex flex-col h-[850px] gap-5  overflow-y-scroll overflow-x-hidden items-center pt-16 
-    md:bg-dest-tablet md:h-[1024px] md:px-6"
+        className="bg-dest-mobile flex flex-col h-[850px] gap-8  overflow-y-scroll overflow-x-hidden items-center 
+    md:bg-dest-tablet md:h-[1024px] md:px-8"
       >
-        <div className="flex gap-3 justify-center items-center md:pt-[136px] md:justify-start md:items-start md:w-full ">
-          <p className="font-barlowCondensed font-bold text-white/30 text-[13px]   ">
-            01
-          </p>
-          <p className="font-barlowCondensed  font-normal text-[13px] md:text-white ">
-            PICK YOUR DESTINATION
-          </p>
+        <div
+          className="flex gap-3 justify-center items-center font-barlowCondensed text-[14px] md:pt-[136px] md:justify-start md:items-start md:w-full md:text-[14px] 
+        md:tracking-[3.38px]  "
+        >
+          <p className="font-bold text-white/30">01</p>
+          <p className="font-normal  md:text-white">PICK YOUR DESTINATION</p>
         </div>
         <div className="md:hidden">
           <Image src={src} width={170} height={170} alt="moon image" />
@@ -39,7 +31,6 @@ const PlanetCard = ({ name, src, description, distance, travel }) => {
             {description}
           </p>
         </div>
-
         <hr className="w-64 border-darkGray md:w-[600px]" />
         <div className="flex flex-col gap-8 justify-center md:flex-row md:gap-12">
           <div className="flex flex-col gap-1 justify-center text-center ">
