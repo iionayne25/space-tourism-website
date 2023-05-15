@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "@/components/Header";
 import Head from "next/head";
-import PlanetCard from "@/components/PlanetCard";
+import DestinationCard from "@/components/DestinationCard";
 import { getLocalData } from "@/lib/localData";
 const mars = ({ localData }) => {
   const destinationData = localData.destinations.map((destination) => {
@@ -11,19 +11,6 @@ const mars = ({ localData }) => {
   });
   const secondDestinationData = destinationData[1];
 
-  const crewData = localData.crew.map((crew) => {
-    const { name, images, role, bio } = crew;
-    const { png, webp } = images;
-    return { name, imageUrl: { png, webp }, role, bio };
-  });
-  const secondCrewData = crewData[1];
-
-  const techData = localData.technology.map((tech) => {
-    const { name, images, description } = tech;
-    const { portrait, landscape } = images;
-    return { name, imageType: { portrait, landscape }, description };
-  });
-  const secondeTechData = techData[1];
   return (
     <>
       <Head>
@@ -32,7 +19,7 @@ const mars = ({ localData }) => {
       </Head>
       <Header />
       <main className="overflow-x-hidden overflow-y-scroll scroll-smooth  ">
-        <PlanetCard
+        <DestinationCard
           name={secondDestinationData.name}
           src={secondDestinationData.imageUrl.png}
           description={secondDestinationData.description}

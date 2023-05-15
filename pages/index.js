@@ -11,9 +11,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Header />
-      <main className="flex min-h-[667px] flex-col  items-center bg-home-mobile pt-20 md:min-h-[1024px] md:bg-home-tablet md:pt-[202px]">
+      <main
+        className="flex min-h-[667px] flex-col  items-center bg-home-mobile pt-20 md:min-h-[1024px] md:bg-home-tablet md:pt-[202px]
+      xl:bg-home-desktop xl:w-[1440px] xl:h-[900px]"
+      >
         <div className="flex flex-col justify-center items-center pb-[85px] space-y-2">
-          <p className="subheading1 text-white  text-center  px-9">
+          <p className="text-xl font-barlowCondensed tracking-[2.7px] text-white  text-center  px-9">
             SO, YOU WANT TO TRAVEL TO
           </p>
           <p className=" text-white text-[80px] md:text-[150px] ">SPACE</p>

@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Header from "@/components/Header";
-import PlanetCard from "@/components/PlanetCard";
+import DestinationCard from "@/components/DestinationCard";
 import { getLocalData } from "/lib/localData.js";
 const index = ({ localData }) => {
   const destinationData = localData.destinations.map((destination) => {
@@ -19,7 +19,7 @@ const index = ({ localData }) => {
       </Head>
       <Header />
       <main className="overflow-x-hidden overflow-y-scroll scroll-smooth">
-        <PlanetCard
+        <DestinationCard
           name={firstDestinationData.name}
           src={firstDestinationData.imageUrl.png}
           description={firstDestinationData.description}

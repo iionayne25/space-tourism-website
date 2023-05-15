@@ -35,7 +35,7 @@ const NavPlanet = () => {
                 ${
                   router.pathname == "/destination/mars"
                     ? "text-white"
-                    : "text-lightBlue hover:border-b-[5px] hover:pb-1.5 hover:border-white/50  first-letter:"
+                    : "text-lightBlue hover:border-b-[5px] hover:pb-1.5 hover:border-white/50 "
                 }`}
               >
                 MARS
@@ -44,7 +44,7 @@ const NavPlanet = () => {
 
             {router.pathname == "/destination/mars" ? (
               <div className="flex justify-center items-center">
-                <p className="bg-white h-[4px] "></p>
+                <p className="bg-white w-full h-[4px] "></p>
               </div>
             ) : (
               ""
