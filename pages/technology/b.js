@@ -20,7 +20,8 @@ const index = ({ localData }) => {
       <main className="overflow-x-hidden overflow-y-scroll scroll-smooth">
         <TechnologyCard
           name={secondTechData.name}
-          src={secondTechData.imageType.landscape}
+          srcLandscape={secondTechData.imageType.landscape}
+        srcPortait ={secondTechData.imageType.portrait}
           description={secondTechData.description}
         />
       </main>

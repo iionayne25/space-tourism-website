@@ -21,44 +21,56 @@ const Sidebar = () => {
             />
           </button>
           <div className="flex flex-col gap-4 ">
-            <Link href="/" >
-              <div className= "sidebarContainer">
+            <Link href="/">
+              <div className="sidebarContainer">
                 <p className="numberOfItem">00</p>
                 <p className="sidebarItem"> HOME</p>
-             { router.pathname == "/"?
-             <div className="basis-full flex justify-end items-center ">
-                <p className="w-1 h-8 self-center bg-white"></p>
-             </div> :""}
+                {router.pathname == "/" ? (
+                  <div className="basis-full flex justify-end items-center ">
+                    <p className="w-1 h-8 self-center bg-white"></p>
+                  </div>
+                ) : (
+                  ""
+                )}
               </div>
             </Link>
-            <Link href="/destination">
+            <Link href="/destination/moon">
               <div className="sidebarContainer">
                 <p className="numberOfItem">01</p>
                 <p className="sidebarItem"> DESTINATION</p>
-                { router.pathname == "/destination"?
-             <div className="basis-full flex justify-end items-center ">
-                <p className="w-1 h-8 self-center bg-white"></p>
-             </div> :""}  
+                {router.pathname == "/destination" ? (
+                  <div className="basis-full flex justify-end items-center ">
+                    <p className="w-1 h-8 self-center bg-white"></p>
+                  </div>
+                ) : (
+                  ""
+                )}
               </div>
             </Link>
-            <Link href="/crew">
+            <Link href="/crew/a">
               <div className="sidebarContainer">
                 <p className="numberOfItem">02</p>
                 <p className="sidebarItem"> CREW</p>
-                { router.pathname == "/crew"?
-             <div className="basis-full flex justify-end items-center ">
-                <p className="w-1 h-8 self-center bg-white"></p>
-             </div> :""}
+                {router.pathname == "/crew" ? (
+                  <div className="basis-full flex justify-end items-center ">
+                    <p className="w-1 h-8 self-center bg-white"></p>
+                  </div>
+                ) : (
+                  ""
+                )}
               </div>
             </Link>
-            <Link href="/technology">
+            <Link href="/technology/a">
               <div className="sidebarContainer">
                 <p className="numberOfItem">03</p>
                 <p className="sidebarItem"> TECHNOLOGY</p>
-                { router.pathname == "/technology"?
-             <div className="basis-full flex justify-end items-center ">
-                <p className="w-1 h-8 self-center bg-white"></p>
-             </div> :""}
+                {router.pathname == "/technology" ? (
+                  <div className="basis-full flex justify-end items-center ">
+                    <p className="w-1 h-8 self-center bg-white"></p>
+                  </div>
+                ) : (
+                  ""
+                )}
               </div>
             </Link>
           </div>

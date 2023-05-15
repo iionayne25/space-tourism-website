@@ -10,6 +10,7 @@ const index = ({localData}) => {
     return {name,imageType:{portrait,landscape},description}
   })
   const firstTechData = techData[0]
+ 
   return (
     <>
     <Head>
@@ -20,7 +21,8 @@ const index = ({localData}) => {
       <main className="overflow-x-hidden overflow-y-scroll scroll-smooth">
       <TechnologyCard
         name={firstTechData.name}
-        src={firstTechData.imageType.landscape}
+        srcLandscape={firstTechData.imageType.landscape}
+        srcPortait ={firstTechData.imageType.portrait}
         description={firstTechData.description}
         />
       </main>
