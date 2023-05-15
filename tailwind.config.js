@@ -6,13 +6,16 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-   
     fontFamily: {
       barlow: ["Barlow", "sans-serif"],
       barlowCondensed: ["Barlow Condensed", "sans-serif"],
       bellefair: ["Bellefair", "serif"],
     },
     extend: {
+      screens: {
+        'md':'768px',
+        "xl": "1440px",
+      },
       backgroundImage: {
         "home-mobile": "url('/home/background-home-mobile.jpg')",
         "home-tablet": "url('/home/background-home-tablet.jpg')",
