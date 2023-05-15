@@ -16,7 +16,7 @@ const TechnologyCard = ({ name, srcLandscape, srcPortait, description }) => {
           <div className="flex flex-col justify-center items-center md:hidden">
             <Image
               src={srcLandscape}
-              width={375}
+              width={376}
               height={170}
               alt={`${name} image`}
             />

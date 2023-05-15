@@ -83,7 +83,7 @@ const Header = () => {
           </Link>
         </div>
         <div className={classNameDes}>
-          <Link href={validDesPath}>
+          <Link href={validDesPath+"/moon"}>
             <div className="xl:flex xl:gap-[11px]">
               <p className="hidden xl:block">01</p>
               <p>DESTINATION</p>
@@ -92,7 +92,7 @@ const Header = () => {
         </div>
 
         <div className={classNameCrew}>
-          <Link href={validCrewPath}>
+          <Link href={validCrewPath+"/a"}>
             <div className="xl:flex xl:gap-[11px]">
               <p className="hidden xl:block">02</p>
               <p>CREW</p>
@@ -101,7 +101,7 @@ const Header = () => {
         </div>
 
         <div className={classNameTech}>
-          <Link href={validTechPath}>
+          <Link href={validTechPath+"/a"}>
             <div className="xl:flex xl:gap-[11px]">
               <p className="hidden xl:block">03</p>
               <p>TECHNOLOGY</p>

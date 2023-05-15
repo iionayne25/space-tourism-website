@@ -5,12 +5,10 @@ import { useRouter } from "next/router";
 const CrewCard = ({ name, src, role, bio }) => {
   const router = useRouter();
   return (
-    <main
-      className="crewContainer"
-    >
+    <main className="crewContainer">
       <div className="xl:flex xl:flex-row xl:justify-center xl:pt-16 xl:h-full">
         <div className="xl:w-1/2 xl:flex xl:justify-center ">
-          <div className="flex flex-col gap-12 md:gap-10  justify-center xl:justify-start items-center xl:gap-28 xl:pl-28  ">
+          <div className="flex flex-col gap-12 md:gap-5  justify-center xl:justify-start items-center xl:gap-28 xl:pl-28  ">
             <div className="topic md:pt-5 ">
               <p className="font-bold text-white/25">02</p>
               <p className="font-normal">MEET YOUR CREW</p>
@@ -100,18 +98,18 @@ const CrewCard = ({ name, src, role, bio }) => {
                 {bio}
               </p>
             </div>
-            <div className="hidden md:flex md:flex-col md:justify-center md:items-center md:gap-8 xl:self-start ">
+            <div className="hidden md:flex md:flex-col md:justify-center md:items-center  xl:self-start ">
               <div className="hidden md:flex md:gap-4   ">
-                <Link href="/crew">
+                <Link href="/crew/a">
                   <p
                     className={`h-2.5 w-2.5 rounded-full ${
-                      router.pathname == "/crew"
+                      router.pathname == "/crew/a"
                         ? "bg-white"
                         : "bg-white/20 hover:bg-white/60"
                     }`}
                   ></p>
                 </Link>
-                <Link href="/crew/b" as="/crew">
+                <Link href="/crew/b">
                   <p
                     className={`h-2.5 w-2.5 rounded-full ${
                       router.pathname == "/crew/b"
@@ -120,7 +118,7 @@ const CrewCard = ({ name, src, role, bio }) => {
                     }`}
                   ></p>
                 </Link>
-                <Link href="/crew/c" as="/crew">
+                <Link href="/crew/c">
                   <p
                     className={`h-2.5 w-2.5 rounded-full ${
                       router.pathname == "/crew/c"

@@ -86,7 +86,7 @@ body {
     @apply uppercase text-[56px] md:text-[80px] text-white font-bellefair;
   }
   .titleName {
-    @apply font-bellefair text-[24px] uppercase text-white pb-4 md:text-[40px] md:pb-4 xl:text-[53px] xl:text-left xl:pb-6;
+    @apply font-bellefair text-[24px] uppercase text-white pb-4 md:text-[40px] md:pb-0 xl:text-[53px] xl:text-left xl:pb-6;
   }
   .attributeDestination {
     @apply font-barlowCondensed text-lightBlue text-[12px] tracking-[2.36px] md:text-[14px];

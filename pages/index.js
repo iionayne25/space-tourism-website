@@ -31,7 +31,7 @@ export default function Home() {
           </p>
         </div>
         <div className="xl:w-1/2 xl:flex xl:justify-center xl:items-center xl:pt-20 ">
-          <Link href="/destination">
+          <Link href="/destination/moon">
             <div className="flex flex-col justify-center bg-white w-[150px] h-[150px] rounded-full md:w-[242px] md:h-[242px] hover:ring-[60px] hover:ring-white/10 xl:w-[274px] xl:h-[274px]  ">
               <p className="text-center items-center font-bellefair text-[20px] tracking-[1.25px] md:text-[32px] md:tracking-[2px]  ">
                 EXPLORE
