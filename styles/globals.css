@@ -2,41 +2,96 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
 
 body {
-margin: 0 auto;}
+  margin: 0 auto;
+}
 
-@layer components{
-  .title-condensed{
-    @apply font-barlowCondensed  text-white font-extralight text-center text-[11px] tracking-[2.7px]
+@layer base {
+  h1 {
+    @apply text-[150px] font-bellefair;
   }
-  .title-bellefair{
-    @apply font-bellefair text-white text-[80px]
+  h2 {
+    @apply text-[100px] font-bellefair;
   }
-  .description{
-    @apply font-barlow text-white text-[15px] text-center
+  h3 {
+    @apply text-[56px] font-bellefair;
   }
-  .sidebar{
-    @apply  h-full w-[254px] bg-black/[0.04] backdrop-blur-xl flex flex-col gap-16 py-4 
-    fixed top-0 -right-[254px] 
-    
+  h4 {
+    @apply text-[32px] font-bellefair;
   }
-  .sidebar.open{
-   @apply right-0
+  h5 {
+    @apply text-[28px] font-barlowCondensed tracking-[4.75px];
   }
-  .sidebarContainer{
-    @apply flex gap-2  items-center h-8
+  subheading1 {
+    @apply text-[28px] font-bellefair;
   }
-  .sidebarItem{
-    @apply text-white  font-barlowCondensed text-[14px] tracking-[2.7px] font-thin basis-1/2
+  subheading2 {
+    @apply text-[14px] font-barlowCondensed tracking-[2.35px];
   }
-  .numberOfItem{
-    @apply text-white font-barlowCondensed font-bold text-[14px] tracking-[2.7px] basis-0 pl-6
+  navText {
+    @apply text-[16px] font-barlowCondensed tracking-[2.7px];
   }
-  .active{
- @apply flex basis-1/2
+}
+
+@layer components {
+  .homeContainer {
+    @apply flex min-h-[667px] flex-col  items-center bg-home-mobile pt-20 md:min-h-[1024px] md:bg-home-tablet md:pt-[202px]
+      xl:bg-home-desktop xl:w-[1440px]  xl:h-[900px] xl:flex-row xl:justify-center xl:items-center;
+  }
+  .destinationContainer {
+    @apply bg-dest-mobile flex flex-col w-[375px] h-[825px] gap-4 md:gap-8  overflow-y-scroll overflow-x-hidden items-center 
+    md:bg-dest-tablet md:w-screen md:h-[1024px] md:px-8 xl:bg-dest-desktop xl:w-[1440px] xl:h-[900px] xl:gap-20;
+  }
+  .crewContainer {
+    @apply bg-crew-mobile flex flex-col gap-16 h-[710px] backdrop-brightness-0 overflow-x-hidden overflow-y-scroll items-center pt-16
+    md:bg-crew-tablet md:h-[1024px] md:px-7 md:gap-10 md:pt-20 xl:bg-crew-desktop  xl:w-[1440px] xl:h-[900px];
+  }
+  .technologyContiner {
+    @apply bg-tech-mobile flex flex-col  gap-6 h-[710px] overflow-x-hidden overflow-y-scroll items-center pt-16
+    md:bg-tech-tablet md:h-[1024px] xl:bg-tech-desktop xl:w-[1440px] xl:h-[900px];
+  }
+  .description {
+    @apply font-barlow text-lightBlue leading-[25px] text-[15px] text-center md:text-[16px] md:leading-[28px]
+    xl:text-[18px] xl:text-justify;
+  }
+  .sidebar {
+    @apply h-full w-[254px] bg-black/[0.04] backdrop-blur-xl flex flex-col gap-16 py-4 
+    fixed top-0 -right-[254px];
+  }
+  .sidebar.open {
+    @apply right-0;
+  }
+  .sidebarContainer {
+    @apply flex gap-2  items-center h-8;
+  }
+  .sidebarItem {
+    @apply text-white  font-barlowCondensed text-[14px] tracking-[2.7px];
+  }
+  .numberOfItem {
+    @apply text-white font-barlowCondensed font-bold text-[14px] tracking-[2.7px] basis-0 pl-6;
+  }
+  .active {
+    @apply flex basis-1/2;
+  }
+  .topic {
+    @apply flex gap-4 justify-center items-center font-barlowCondensed text-xs text-white
+  md:pt-[136px] md:justify-start md:items-start md:w-full  md:tracking-[3.38px] uppercase
+  xl:text-[20px] xl:tracking-[4.72px] xl:justify-start xl:text-left;
+  }
+  .titleDestination {
+    @apply uppercase text-[56px] md:text-[80px] text-white font-bellefair;
+  }
+  .titleName {
+    @apply font-bellefair text-[24px] uppercase text-white pb-4 md:text-[40px] md:pb-0 xl:text-[53px] xl:text-left xl:pb-6;
+  }
+  .attributeDestination {
+    @apply font-barlowCondensed text-lightBlue text-[12px] tracking-[2.36px] md:text-[14px];
+  }
+  .attributeNumber {
+    @apply font-bellefair text-white text-[28px] uppercase;
   }
 }

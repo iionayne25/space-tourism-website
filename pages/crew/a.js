@@ -9,11 +9,11 @@ const index = ({ localData }) => {
     const { png, webp } = images;
     return { name, imageUrl: { png, webp }, role, bio };
   });
-  const secondCrewData = crewData[1];
+  const firstCrewData = crewData[0];
   return (
     <>
       <Head>
-        <title>Crew B</title>
+        <title>Crew A</title>
         <meta
           name="description"
           content="This is sub crew A page in crew page of space tourism website"
@@ -23,10 +23,10 @@ const index = ({ localData }) => {
       <Header />
       <main className="overflow-x-hidden overflow-y-scroll scroll-smooth">
         <CrewCard
-          name={secondCrewData.name}
-          src={secondCrewData.imageUrl.png}
-          role={secondCrewData.role}
-          bio={secondCrewData.bio}
+          name={firstCrewData.name}
+          src={firstCrewData.imageUrl.png}
+          role={firstCrewData.role}
+          bio={firstCrewData.bio}
         />
       </main>
     </>

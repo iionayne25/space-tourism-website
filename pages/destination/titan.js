@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "@/components/Header";
 import Head from "next/head";
-import PlanetCard from "@/components/PlanetCard";
+import DestinationCard from "@/components/DestinationCard";
 import { getLocalData } from "@/lib/localData";
 
 const titan = ({ localData }) => {
@@ -15,12 +15,16 @@ const titan = ({ localData }) => {
   return (
     <>
       <Head>
-        <title>Destination</title>
+        <title>Titan</title>
+        <meta
+          name="description"
+          content="This is sub destination titan page in destination page of space tourism website"
+        />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Header />
-      <main className="min-h-screen bg-dest-mobile pt-5  ">
-        <PlanetCard
+      <main className="min-h-screen bg-dest-mobile">
+        <DestinationCard
           name={fourthDestinationData.name}
           src={fourthDestinationData.imageUrl.png}
           description={fourthDestinationData.description}

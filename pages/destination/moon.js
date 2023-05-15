@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Header from "@/components/Header";
-import PlanetCard from "@/components/PlanetCard";
+import DestinationCard from "@/components/DestinationCard";
 import { getLocalData } from "/lib/localData.js";
 const index = ({ localData }) => {
   const destinationData = localData.destinations.map((destination) => {
@@ -14,12 +14,16 @@ const index = ({ localData }) => {
   return (
     <div>
       <Head>
-        <title>Destination</title>
+        <title>Moon</title>
+        <meta
+          name="description"
+          content="This is sub destination moon page in destination page of space tourism website"
+        />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Header />
       <main className="overflow-x-hidden overflow-y-scroll scroll-smooth">
-        <PlanetCard
+        <DestinationCard
           name={firstDestinationData.name}
           src={firstDestinationData.imageUrl.png}
           description={firstDestinationData.description}

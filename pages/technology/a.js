@@ -9,24 +9,25 @@ const index = ({ localData }) => {
     const { portrait, landscape } = images;
     return { name, imageType: { portrait, landscape }, description };
   });
-  const thirdTechData = techData[2];
+  const firstTechData = techData[0];
+
   return (
     <>
       <Head>
-        <title>Technology C</title>
+        <title>Technology A</title>
         <meta
           name="description"
-          content="This is sub technology C page in technology page of space tourism website"
+          content="This is sub technology A page in technology page of space tourism website"
         />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Header />
       <main className="overflow-x-hidden overflow-y-scroll scroll-smooth">
         <TechnologyCard
-          name={thirdTechData.name}
-          srcLandscape={thirdTechData.imageType.landscape}
-          srcPortait={thirdTechData.imageType.portrait}
-          description={thirdTechData.description}
+          name={firstTechData.name}
+          srcLandscape={firstTechData.imageType.landscape}
+          srcPortait={firstTechData.imageType.portrait}
+          description={firstTechData.description}
         />
       </main>
     </>
