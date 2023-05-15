@@ -6,10 +6,7 @@ const TechnologyCard = ({ name, srcLandscape, srcPortait, description }) => {
   const router = useRouter();
 
   return (
-    <div
-      className="bg-tech-mobile flex flex-col  gap-6 h-[710px] overflow-x-hidden overflow-y-scroll items-center pt-16
-    md:bg-tech-tablet md:h-[1024px] xl:bg-tech-desktop xl:w-[1440px] xl:h-[900px]"
-    >
+    <div className="technologyContiner">
       <div className="topic md:px-6 md:pt-12 md:pb-7 xl:px-36 xl:pt-28">
         <p className="font-bold text-white/25">03</p>
         <p className="font-normal">space launce 101</p>
@@ -22,7 +19,6 @@ const TechnologyCard = ({ name, srcLandscape, srcPortait, description }) => {
               width={375}
               height={170}
               alt={`${name} image`}
-              className=""
             />
           </div>
           <div className="hidden md:flex md:flex-col md:justify-center md:items-center xl:hidden">

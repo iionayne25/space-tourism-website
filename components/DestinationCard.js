@@ -5,10 +5,7 @@ import NavDestination from "./NavDestination";
 const DestinationCard = ({ name, src, description, distance, travel }) => {
   return (
     <>
-      <main
-        className="bg-dest-mobile flex flex-col w-[375px] h-[825px] gap-4 md:gap-8  overflow-y-scroll overflow-x-hidden items-center 
-    md:bg-dest-tablet md:w-screen md:h-[1024px] md:px-8 xl:bg-dest-desktop xl:w-[1440px] xl:h-[900px] xl:gap-20"
-      >
+      <main className="destinationContainer">
         <div className="topic pt-16 md:pt-28 xl:pt-[212px] xl:pl-[135px]">
           <p className="font-bold text-white/25">01</p>
           <p className="font-norma">PICK YOUR DESTINATION</p>

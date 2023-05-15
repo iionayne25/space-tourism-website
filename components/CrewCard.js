@@ -6,8 +6,7 @@ const CrewCard = ({ name, src, role, bio }) => {
   const router = useRouter();
   return (
     <main
-      className="bg-crew-mobile flex flex-col gap-16 h-[710px] backdrop-brightness-0 overflow-x-hidden overflow-y-scroll items-center pt-16
-    md:bg-crew-tablet md:h-[1024px] md:px-7 md:gap-10 md:pt-20 xl:bg-crew-desktop  xl:w-[1440px] xl:h-[900px] "
+      className="crewContainer"
     >
       <div className="xl:flex xl:flex-row xl:justify-center xl:pt-16 xl:h-full">
         <div className="xl:w-1/2 xl:flex xl:justify-center ">

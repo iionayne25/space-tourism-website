@@ -13,7 +13,11 @@ const index = ({ localData }) => {
   return (
     <>
       <Head>
-        <title>Technology</title>
+        <title>Technology C</title>
+        <meta
+          name="description"
+          content="This is sub technology C page in technology page of space tourism website"
+        />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Header />

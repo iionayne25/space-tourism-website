@@ -14,7 +14,11 @@ const index = ({ localData }) => {
   return (
     <div>
       <Head>
-        <title>Destination</title>
+        <title>Moon</title>
+        <meta
+          name="description"
+          content="This is sub destination moon page in destination page of space tourism website"
+        />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Header />

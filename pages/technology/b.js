@@ -13,7 +13,11 @@ const index = ({ localData }) => {
   return (
     <>
       <Head>
-        <title>Technology</title>
+        <title>Technology B</title>
+        <meta
+          name="description"
+          content="This is sub technology B page in technology page of space tourism website"
+        />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Header />
@@ -21,7 +25,7 @@ const index = ({ localData }) => {
         <TechnologyCard
           name={secondTechData.name}
           srcLandscape={secondTechData.imageType.landscape}
-        srcPortait ={secondTechData.imageType.portrait}
+          srcPortait={secondTechData.imageType.portrait}
           description={secondTechData.description}
         />
       </main>

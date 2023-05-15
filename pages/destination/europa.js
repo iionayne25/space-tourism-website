@@ -4,7 +4,6 @@ import Head from "next/head";
 import DestinationCard from "@/components/DestinationCard";
 import { getLocalData } from "@/lib/localData";
 const europa = ({ localData }) => {
-  
   const destinationData = localData.destinations.map((destination) => {
     const { name, images, description, distance, travel } = destination;
     const { png, webp } = images;
@@ -15,7 +14,11 @@ const europa = ({ localData }) => {
   return (
     <>
       <Head>
-        <title>Destination</title>
+        <title>Europa</title>
+        <meta
+          name="description"
+          content="This is sub destination europa page in destination page of space tourism website"
+        />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Header />

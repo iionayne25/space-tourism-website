@@ -14,7 +14,11 @@ const mars = ({ localData }) => {
   return (
     <>
       <Head>
-        <title>Destination</title>
+        <title>Mars</title>
+        <meta
+          name="description"
+          content="This is sub destination mars page in destination page of space tourism website"
+        />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Header />

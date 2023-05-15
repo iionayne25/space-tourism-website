@@ -8,13 +8,14 @@ export default function Home() {
     <>
       <Head>
         <title>Space Tourism</title>
+        <meta
+          name="description"
+          content="This is home page of space tourism website"
+        />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Header />
-      <main
-        className="flex min-h-[667px] flex-col  items-center bg-home-mobile pt-20 md:min-h-[1024px] md:bg-home-tablet md:pt-[202px]
-      xl:bg-home-desktop xl:w-[1440px]  xl:h-[900px] xl:flex-row xl:justify-center xl:items-center "
-      >
+      <main className="homeContainer">
         <div className="flex flex-col justify-center items-center pb-[85px]  xl:w-1/2 xl:pb-10">
           <p className="text-[12px] font-barlowCondensed tracking-[2.7px] text-lightBlue text-center px-9 xl:text-[20px] xl:pl-32 xl:w-full xl:text-left ">
             SO, YOU WANT TO TRAVEL TO

@@ -15,7 +15,11 @@ const titan = ({ localData }) => {
   return (
     <>
       <Head>
-        <title>Destination</title>
+        <title>Titan</title>
+        <meta
+          name="description"
+          content="This is sub destination titan page in destination page of space tourism website"
+        />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Header />
