@@ -11,10 +11,10 @@ const DestinationCard = ({ name, src, description, distance, travel }) => {
           <p className="font-norma">PICK YOUR DESTINATION</p>
         </div>
         <div className="md:hidden">
-          <Image src={src} width={170} height={170} alt="moon image" />
+          <Image src={src} width={170} height={170} alt="moon image" loading="lazy" />
         </div>
         <div className="hidden md:block xl:hidden">
-          <Image src={src} width={300} height={300} alt="moon image" />
+          <Image src={src} width={300} height={300} alt="moon image" loading="lazy" />
         </div>
 
         <div className="xl:flex xl:flex-row xl:justify-center xl:gap-2">
@@ -24,6 +24,7 @@ const DestinationCard = ({ name, src, description, distance, travel }) => {
               width={445}
               height={445}
               alt="moon image"
+              loading="lazy"
               className="hidden xl:block"
             />
           </div>

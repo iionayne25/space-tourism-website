@@ -18,6 +18,7 @@ const Sidebar = () => {
               width={19.09}
               height={19.09}
               alt="close icon image"
+              loading="lazy"
             />
           </button>
           <div className="flex flex-col gap-4 ">
@@ -82,7 +83,7 @@ const Sidebar = () => {
             width={24}
             height={21}
             alt="hamburger icon image"
-            className=""
+            loading="lazy"
           />
         </div>
       )}

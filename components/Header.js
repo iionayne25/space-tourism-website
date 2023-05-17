@@ -49,6 +49,7 @@ const Header = () => {
           width={40}
           height={40}
           alt="logo image"
+          loading="lazy"
           className="md:hidden"
         />
         <Image
@@ -56,6 +57,7 @@ const Header = () => {
           width={48}
           height={48}
           alt="logo image"
+          loading="lazy"
           className="hidden md:block xl:pt-8"
         />
       </Link>

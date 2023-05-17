@@ -22,6 +22,7 @@ const CrewCard = ({ name, src, role, bio }) => {
                     width={177}
                     height={222}
                     alt={`${name} image`}
+                    loading="lazy"
                   />
                 ) : src === "/crew/image-mark-shuttleworth.png" ? (
                   <Image
@@ -29,6 +30,7 @@ const CrewCard = ({ name, src, role, bio }) => {
                     width={154}
                     height={222}
                     alt={`${name} image`}
+                    loading="lazy"
                   />
                 ) : src === "/crew/image-victor-glover.png" ? (
                   <Image
@@ -36,6 +38,7 @@ const CrewCard = ({ name, src, role, bio }) => {
                     width={181}
                     height={222}
                     alt={`${name} image`}
+                    loading="lazy"
                   />
                 ) : (
                   <Image
@@ -43,6 +46,7 @@ const CrewCard = ({ name, src, role, bio }) => {
                     width={226}
                     height={222}
                     alt={`${name} image`}
+                    loading="lazy"
                   />
                 )}
                 <hr className="w-64 border-[1px] border-darkGray" />
@@ -144,6 +148,7 @@ const CrewCard = ({ name, src, role, bio }) => {
                     width={457}
                     height={577}
                     alt={`${name} image`}
+                    loading="lazy"
                   />
                 ) : src === "/crew/image-mark-shuttleworth.png" ? (
                   <Image
@@ -151,6 +156,7 @@ const CrewCard = ({ name, src, role, bio }) => {
                     width={367}
                     height={535}
                     alt={`${name} image`}
+                    loading="lazy"
                   />
                 ) : src === "/crew/image-victor-glover.png" ? (
                   <Image
@@ -158,6 +164,7 @@ const CrewCard = ({ name, src, role, bio }) => {
                     width={433}
                     height={532}
                     alt={`${name} image`}
+                    loading="lazy"
                   />
                 ) : (
                   <Image
@@ -165,6 +172,7 @@ const CrewCard = ({ name, src, role, bio }) => {
                     width={520}
                     height={532}
                     alt={`${name} image`}
+                    loading="lazy"
                   />
                 )}
               </div>
@@ -180,14 +188,15 @@ const CrewCard = ({ name, src, role, bio }) => {
                 width={568}
                 height={654}
                 alt={`${name} image`}
+                loading="lazy"
                 className="pt-5 pl-5 pr-5"
               />
             ) : src === "/crew/image-mark-shuttleworth.png" ? (
-              <Image src={src} width={453} height={654} alt={`${name} image`} />
+              <Image src={src} width={453} height={654} alt={`${name} image`} loading="lazy" />
             ) : src === "/crew/image-victor-glover.png" ? (
-              <Image src={src} width={554} height={681} alt={`${name} image`} />
+              <Image src={src} width={554} height={681} alt={`${name} image`} loading="lazy" />
             ) : (
-              <Image src={src} width={615} height={607} alt={`${name} image`} />
+              <Image src={src} width={615} height={607} alt={`${name} image`} loading="lazy" />
             )}
           </div>
         </div>

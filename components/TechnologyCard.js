@@ -19,6 +19,7 @@ const TechnologyCard = ({ name, srcLandscape, srcPortait, description }) => {
               width={376}
               height={170}
               alt={`${name} image`}
+              loading="lazy"
             />
           </div>
           <div className="hidden md:flex md:flex-col md:justify-center md:items-center xl:hidden">
@@ -27,7 +28,7 @@ const TechnologyCard = ({ name, srcLandscape, srcPortait, description }) => {
               width={768}
               height={310}
               alt={`${name} image`}
-              className=""
+              loading="lazy"
             />
           </div>
           <div className="flex flex-col xl:flex-row xl:gap-14 gap-4 justify-center items-center text-center pt-8 md:pt-12 xl:pt-0  ">
@@ -88,7 +89,7 @@ const TechnologyCard = ({ name, srcLandscape, srcPortait, description }) => {
               width={515}
               height={527}
               alt={`${name} image`}
-              className=""
+              loading="lazy"
             />
           </div>
         </div>
